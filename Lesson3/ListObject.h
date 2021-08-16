@@ -11,6 +11,6 @@
 class ListObject
 {
 public:
-	vector<BaseObject*> ls;
+	vector<BaseObject*> listObj;
 	~ListObject();
 };

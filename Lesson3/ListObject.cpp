@@ -1,6 +1,6 @@
 #include "ListObject.h"
 ListObject::~ListObject()
 {
-	this->ls.clear();
+	this->listObj.clear();
 }
 
