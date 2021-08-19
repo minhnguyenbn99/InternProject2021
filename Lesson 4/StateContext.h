@@ -6,14 +6,11 @@ class StateContext
 private:
 	StateBase* m_state;
 public:
-	StateContext(StateBase* state) :m_state(nullptr) {
-		this->transition(state);
-		
-	}
-	~StateContext() {
-		delete m_state;
-	}
+	StateContext(StateBase* state);
+	~StateContext();
+
 	void transition(StateBase* state);
+
 	void transitionToOpen();
 	void transitionToLock();
 	void transitionToUnLock();

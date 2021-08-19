@@ -7,9 +7,7 @@ class StateBase
 protected:
 	StateContext* m_statect;
 public:
-	void setcontext(StateContext* statect) {
-		this->m_statect = statect;
-	}
+	void setcontext(StateContext* statect);
 	virtual void unlockdoor()=0;
 	virtual void lockdoor()=0;
 	virtual void opendoor()=0;

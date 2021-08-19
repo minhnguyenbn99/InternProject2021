@@ -3,6 +3,13 @@
 #include "ClosedState.h"
 
 
+StateContext::StateContext(StateBase* state) :m_state(nullptr) {
+	this->transition(state);
+
+}
+StateContext::~StateContext() {
+	delete m_state;
+}
 void StateContext::transition(StateBase* state) {
 	if (this->m_state != nullptr) delete this->m_state;
 	this->m_state = state;
