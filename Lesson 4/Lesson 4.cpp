@@ -1,6 +1,5 @@
 #include<iostream>
 #include"StateContext.h"
-#include"OpennedState.h"
 #include"ClosedState.h"
 using namespace std;
 void test() {

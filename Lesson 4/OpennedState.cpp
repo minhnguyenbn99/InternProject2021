@@ -22,7 +22,7 @@ void OpennedState::closedoor()
 
 void OpennedState::unlockdoor()
 {
-	cout << "--Door is open" << endl;
+	cout << "--Door is unlocked" << endl;
 
 }
 
