@@ -34,11 +34,11 @@ void GSCredit::Init()
         });
     m_listButton.push_back(buttonClose);
 
-    // Form Infor
+    // Panel Credit
     texture = ResourceManagers::GetInstance()->GetTexture("gs credit.tga");
     m_panelCredits = std::make_shared<Sprite2D>(model, shader, texture);
     m_panelCredits->Set2DPosition(Globals::screenWidth / 2, 300);
-    m_panelCredits->SetSize(450, 250);
+    m_panelCredits->SetSize(400, 300);
 
     // credit text
     shader = ResourceManagers::GetInstance()->GetShader("TextShader");
