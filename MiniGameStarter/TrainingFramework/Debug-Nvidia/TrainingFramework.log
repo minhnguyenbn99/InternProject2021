@@ -1,2 +1,27 @@
-﻿  GSMenu.cpp
-  TrainingFramework.vcxproj -> C:\Users\Minh Nguyen Macbook\Desktop\MiniGameStarter\BIN-Nvidia\TrainingFramework.exe
+﻿  GSPlay.cpp
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(31,92): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(31,58): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xutility(138,73): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2194): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[9],TextColor,double>(_Ty &,std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[9],TextColor &&,double &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2907): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[9],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[9],TextColor &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2907): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[9],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[9],TextColor &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(52): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[9],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[9],TextColor &&,double &&)' being compiled
+  GameStateBase.cpp
+  Generating Code...
+  TrainingFramework.vcxproj -> C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\BIN-Nvidia\TrainingFramework.exe

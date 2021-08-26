@@ -31,6 +31,11 @@ void GSPlay::Init()
 	m_background->Set2DPosition((float)Globals::screenWidth / 2, (float)Globals::screenHeight / 2);
 	m_background->SetSize(Globals::screenWidth, Globals::screenHeight);
 
+	texture = ResourceManagers::GetInstance()->GetTexture("car.tga");
+	m_gameobject = std::make_shared<Sprite2D>(model, shader, texture);
+	m_gameobject->Set2DPosition(300, 300);
+	m_gameobject->SetSize(100, 100);
+
 	// button close
 	texture = ResourceManagers::GetInstance()->GetTexture("btn_close.tga");
 	std::shared_ptr<GameButton>  button = std::make_shared<GameButton>(model, shader, texture);
@@ -96,6 +101,7 @@ void GSPlay::Update(float deltaTime)
 void GSPlay::Draw()
 {
 	m_background->Draw();
+	m_gameobject->Draw();
 	m_score->Draw();
 	for (auto it : m_listButton)
 	{

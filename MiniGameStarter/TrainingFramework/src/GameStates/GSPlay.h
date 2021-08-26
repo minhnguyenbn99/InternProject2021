@@ -28,6 +28,7 @@ public:
 
 private:
 	std::shared_ptr<Sprite2D>	m_background;
+	std::shared_ptr<Sprite2D>	m_gameobject;
 	std::shared_ptr<Text>		m_score;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
 
