@@ -1,6 +1,7 @@
 #pragma once
 #include "GameStateBase.h"
 #include "GameButton.h"
+//#include "GameObject.h"
 
 class GSMenu :
 	public GameStateBase
@@ -24,6 +25,11 @@ public:
 
 private:
 	std::shared_ptr<Sprite2D>				m_background;
+	std::shared_ptr<Sprite2D>				m_startLine;
+	std::shared_ptr<Sprite2D>				m_carplay1;
+	std::shared_ptr<Sprite2D>				m_carplay2;
+	std::shared_ptr<Sprite2D>				m_barrel;
+	std::shared_ptr<Sprite2D>				m_block;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
 	std::shared_ptr<Text>					m_textGameName;
 

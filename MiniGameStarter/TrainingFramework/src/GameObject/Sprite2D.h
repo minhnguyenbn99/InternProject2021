@@ -22,5 +22,9 @@ public:
 	void		Set2DPosition(GLint x, GLint y);
 	void		Set2DPosition(Vector2 position);
 	void		SetSize(GLint width, GLint height);
+
+	int			getWidth();
+	int			getHeight();
+
 };
 

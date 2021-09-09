@@ -40,6 +40,8 @@ void GSCredit::Init()
     m_panelCredits->Set2DPosition(Globals::screenWidth / 2, 300);
     m_panelCredits->SetSize(400, 300);
 
+
+   
     // credit text
     shader = ResourceManagers::GetInstance()->GetShader("TextShader");
     std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("arialbd.ttf");
@@ -69,6 +71,7 @@ void GSCredit::HandleEvents()
 
 void GSCredit::HandleKeyEvents(int key, bool bIsPressed)
 {
+   
 }
 
 void GSCredit::HandleTouchEvents(int x, int y, bool bIsPressed)

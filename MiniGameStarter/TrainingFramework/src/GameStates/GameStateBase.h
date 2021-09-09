@@ -23,10 +23,12 @@ public:
 	virtual void Update(float deltaTime) = 0;
 	virtual void Draw() = 0;
 	
+	static int m_keyPressed;
 	static std::shared_ptr<GameStateBase> CreateState(StateType stt);
 	StateType GetGameStateType();
-
+	
 protected:
 	StateType m_stateType;
+	
 };
 
