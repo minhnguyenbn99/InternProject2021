@@ -23,6 +23,7 @@ void GameStateMachine::Cleanup()
 
 void GameStateMachine::ChangeState(StateType state)
 {
+
 	std::shared_ptr<GameStateBase> nextState = GameStateBase::CreateState(state);
 	ChangeState(nextState);
 }
@@ -43,6 +44,15 @@ void GameStateMachine::PushState(StateType state)
 	m_pNextState = nextState;
 }
 
+void GameStateMachine::EndGameState(StateType state) {
+	if (!m_StateStack.empty()) {
+		m_StateStack.back()->Exit();
+		m_StateStack.pop_back();
+	}
+	std::shared_ptr<GameStateBase> EndGameState = GameStateBase::CreateState(state);
+	ChangeState(EndGameState);
+
+}
 void GameStateMachine::PopState()
 {
 	// cleanup the current state

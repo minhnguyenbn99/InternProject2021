@@ -15,7 +15,7 @@ GSCredit::~GSCredit()
 void GSCredit::Init()
 {
     auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D.nfg");
-    auto texture = ResourceManagers::GetInstance()->GetTexture("anh nen 2.tga");
+    auto texture = ResourceManagers::GetInstance()->GetTexture("BGCar5.tga");
 
     // background
     auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");

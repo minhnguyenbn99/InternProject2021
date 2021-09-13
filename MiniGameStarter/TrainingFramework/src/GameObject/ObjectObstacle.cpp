@@ -28,6 +28,12 @@ void ObjectObstacle::Init()
 
 void ObjectObstacle::Update(float deltaTime)
 {
+	
 		Set2DPosition(this->GetPosition().x, this->GetPosition().y + 100 * deltaTime);
+		Vector3 currentPos = this->GetPosition();
+		if (this->GetPosition().y >= 750) {
+			Set2DPosition(currentPos.x, -100);
+		}
+
 }
 	
