@@ -12,10 +12,10 @@ ParallelBG::ParallelBG(std::shared_ptr<Model> model, std::shared_ptr<Shader> sha
 {
 	m_background = std::make_shared<Sprite2D>(model, shader, texture);
 	m_background->Set2DPosition(Globals::screenWidth / 2, Globals::screenHeight / 2);
-	m_background->SetSize(Globals::screenWidth, Globals::screenHeight+4);
+	m_background->SetSize(Globals::screenWidth, Globals::screenHeight+6);
 	m_background1 = std::make_shared<Sprite2D>(model, shader, texture);
 	m_background1->Set2DPosition(Globals::screenWidth / 2, Globals::screenHeight / 2 + Globals::screenHeight);
-	m_background1->SetSize(Globals::screenWidth, Globals::screenHeight+4);
+	m_background1->SetSize(Globals::screenWidth, Globals::screenHeight+6);
 
 	Init();
 }

@@ -35,20 +35,27 @@ void GSCredit::Init()
     m_listButton.push_back(buttonClose);
 
     // Panel Credit
-    texture = ResourceManagers::GetInstance()->GetTexture("gs credit.tga");
+    texture = ResourceManagers::GetInstance()->GetTexture("EndGame.tga");
     m_panelCredits = std::make_shared<Sprite2D>(model, shader, texture);
     m_panelCredits->Set2DPosition(Globals::screenWidth / 2, 300);
-    m_panelCredits->SetSize(400, 300);
+    m_panelCredits->SetSize(450, 400);
 
 
    
     // credit text
     shader = ResourceManagers::GetInstance()->GetShader("TextShader");
-    std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("arialbd.ttf");
+    std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("Niagaraphobia-Bro3.ttf");
     m_textGameName = std::make_shared< Text>(shader, font, "Nguyen Duc Minh - Hust", TextColor:: BLACK, 1.0f);
     m_textGameName1 = std::make_shared< Text>(shader, font, "Shooting Game", TextColor::BLACK, 1.0f);
-    m_textGameName->Set2DPosition(Vector2(80, 300));
-    m_textGameName1->Set2DPosition(Vector2(80, 330));
+    m_textGameName2 = std::make_shared< Text>(shader, font, "Use W-S-A-D to control player", TextColor::BLACK, 1.0f);
+    m_textGameName3 = std::make_shared< Text>(shader, font, "If Player & Obstacle collision: Game Over", TextColor::BLACK, 1.0f);
+    m_textGameName4 = std::make_shared< Text>(shader, font, "Collect Coins to get more score ", TextColor::BLACK, 1.0f);
+    m_textGameName->Set2DPosition(Vector2(145, 210));
+    m_textGameName1->Set2DPosition(Vector2(145, 240));
+    m_textGameName2->Set2DPosition(Vector2(145, 270));
+    m_textGameName3->Set2DPosition(Vector2(145, 300));
+    m_textGameName4->Set2DPosition(Vector2(145, 330));
+
 }
 
 void GSCredit::Exit()
@@ -104,7 +111,9 @@ void GSCredit::Draw()
     m_panelCredits->Draw();
     m_textGameName->Draw();
     m_textGameName1->Draw();
-
+    m_textGameName2->Draw();
+    m_textGameName3->Draw();
+    m_textGameName4->Draw();
     for (auto it : m_listButton)
     {
         it->Draw();

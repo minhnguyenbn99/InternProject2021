@@ -22,7 +22,7 @@
 using namespace std;
 
 GSPlay::GSPlay()
-	: GameStateBase(StateType::STATE_PLAY), m_score(0), m_spawnEnemyTime(4.f), scoregame(0), difficultgame(0), nocollision(true), m_spawnAwardTime(5.f)
+	: GameStateBase(StateType::STATE_PLAY), m_score(0), m_spawnEnemyTime(3.f), scoregame(0), difficultgame(0), nocollision(true), m_spawnAwardTime(5.f)
 	, endgame(false), m_time(0.0f)
 {
 }
@@ -50,7 +50,7 @@ void GSPlay::Init()
 	// block
 	texture = ResourceManagers::GetInstance()->GetTexture("block.tga");
 	m_block = std::make_shared<ObjectObstacle>(model, shader, texture);
-	m_block->Set2DPosition(40, 200);
+	m_block->Set2DPosition(60, 200);
 	m_block->SetSize(100, 40);
 	
 	// carbg
@@ -66,11 +66,11 @@ void GSPlay::Init()
 	m_objectplayer->SetSize(70, 100);
 
 	//coins
-	texture = ResourceManagers::GetInstance()->GetTexture("coins.tga");
-	shader = ResourceManagers::GetInstance()->GetShader("AnimationShader");
-	m_coins = std::make_shared<AnimationSprite>(model, shader, texture, 10, 0.1f);
-	m_coins->Set2DPosition(550,100);
-	m_coins->SetSize(70, 70);
+	//texture = ResourceManagers::GetInstance()->GetTexture("coins.tga");
+	//shader = ResourceManagers::GetInstance()->GetShader("AnimationShader");
+	//m_coins = std::make_shared<AnimationSprite>(model, shader, texture, 10, 0.1f);
+	//m_coins->Set2DPosition(550,100);
+	//m_coins->SetSize(70, 70);
 
 	// button close
 	shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
@@ -185,7 +185,7 @@ void GSPlay::Update(float deltaTime)
 {
 	if(!endgame){
 		m_background->Update(deltaTime);
-		m_coins->Update(deltaTime);
+		//m_coins->Update(deltaTime);
 		m_block->Update(deltaTime);
 		m_barrel->Update(deltaTime);
 		m_carbg->Update(deltaTime);
@@ -251,7 +251,7 @@ void GSPlay::Update(float deltaTime)
 		
 	}
 	
-	if (!endgame) {
+	/*if (!endgame) {
 		for (int i = 0; i < m_listAwdObj.size(); i++)
 		{
 			
@@ -261,16 +261,23 @@ void GSPlay::Update(float deltaTime)
 			m_listAwdObj[i]->Update(deltaTime* (1 + difficultgame + 0.2));
 
 		}
-	}
+	}*/
 	
 	
 	if (!endgame) {
 		for (int i = 0; i < m_listObsObj.size(); i++)
 		{
 			Vector3 currentObstaclePos = m_listObsObj[i]->GetPosition();
-			if (scoregame > 60) {
+			if (scoregame >= 60 && scoregame <=150) {
 				difficultgame = 0.5;
 			}
+			if (scoregame > 150 && scoregame <= 200) {
+				difficultgame = 0.8;
+			}
+			if (scoregame > 200) {
+				difficultgame = 1.0;
+			}
+
 			m_listObsObj[i]->Update(deltaTime * (1 + difficultgame + 0.2));
 
 
@@ -340,7 +347,7 @@ void GSPlay::spawnObstacle(float deltaTime) {
 					obsobj->SetSize(70, 100);
 					obsobj->Set2DPosition(170 + 85 * (rand() % 4), -100);
 					m_listObsObj.push_back(obsobj);
-					m_spawnEnemyTime = 2.0f;
+					m_spawnEnemyTime = 1.2f;
 					obsobj->SetCoin(false);
 				}
 				else if (rand() % 3 == 1) {
@@ -349,7 +356,7 @@ void GSPlay::spawnObstacle(float deltaTime) {
 					obsobj->SetSize(170, 40);
 					obsobj->Set2DPosition(130 + 85 * (2 * (rand() % 2) + 1), -100);
 					m_listObsObj.push_back(obsobj);
-					m_spawnEnemyTime = 2.0f;
+					m_spawnEnemyTime = 1.2f;
 					obsobj->SetCoin(false);
 				}
 				else if (rand() % 3 == 2) {
@@ -359,7 +366,7 @@ void GSPlay::spawnObstacle(float deltaTime) {
 					obsobj->SetSize(70, 70);
 					obsobj->Set2DPosition(170 + 85 * (rand() % 4), -100);
 					m_listObsObj.push_back(obsobj);
-					m_spawnEnemyTime = 2.0f;
+					m_spawnEnemyTime = 1.2f;
 					obsobj->SetCoin(true);
 				}
 			}
@@ -436,7 +443,7 @@ void GSPlay::Draw()
 	m_objectplayer->Draw();
 	m_barrel->Draw();
 	m_block->Draw();
-	m_coins->Draw();
+	//m_coins->Draw();
 	m_carbg->Draw();
 	
 	if (endgame) {

@@ -27,5 +27,8 @@ private:
 	std::shared_ptr<Sprite2D>				m_panelCredits;
 	std::shared_ptr<Text>					m_textGameName;
 	std::shared_ptr<Text>					m_textGameName1;
+	std::shared_ptr<Text>					m_textGameName2;
+	std::shared_ptr<Text>					m_textGameName3;
+	std::shared_ptr<Text>					m_textGameName4;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
 };

@@ -1,9 +1,8 @@
 ﻿  GSPlay.cpp
 C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(79,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(228,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(262,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(268,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(275,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(268,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(275,24): warning C4305: '=': truncation from 'double' to 'float'
 C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(281,38): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(286,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(336,31): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
