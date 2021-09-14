@@ -50,9 +50,15 @@ void GSPlay::Init()
 	// block
 	texture = ResourceManagers::GetInstance()->GetTexture("block.tga");
 	m_block = std::make_shared<ObjectObstacle>(model, shader, texture);
-	m_block->Set2DPosition(50, 200);
+	m_block->Set2DPosition(40, 200);
 	m_block->SetSize(100, 40);
 	
+	// carbg
+	texture = ResourceManagers::GetInstance()->GetTexture("audi3.tga");
+	m_carbg = std::make_shared<ObjectObstacle>(model, shader, texture);
+	m_carbg->Set2DPosition(550, -100);
+	m_carbg->SetSize(70, 100);
+
 	// carplayer
 	texture = ResourceManagers::GetInstance()->GetTexture("audi1.tga");
 	m_objectplayer = std::make_shared<Sprite2D>(model, shader, texture);
@@ -182,7 +188,7 @@ void GSPlay::Update(float deltaTime)
 		m_coins->Update(deltaTime);
 		m_block->Update(deltaTime);
 		m_barrel->Update(deltaTime);
-
+		m_carbg->Update(deltaTime);
 	}
 	
 	
@@ -228,14 +234,7 @@ void GSPlay::Update(float deltaTime)
 			nocollision = false;
 			endgame = true;
 			m_time += deltaTime;
-			auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D.nfg");
-			/*auto texture = ResourceManagers::GetInstance()->GetTexture("boom.tga");
-			auto shader = ResourceManagers::GetInstance()->GetShader("AnimationShader");
-			m_boom = std::make_shared<AnimationSprite>(model, shader, texture, 47, 0.1f);
-			m_boom->Set2DPosition(currentPlayerPos.x-35, currentPlayerPos.y-50);
-			m_boom->SetSize(50, 50);
-			m_boom->Update(deltaTime);*/
-			if (m_time >= 1.5) {
+				auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D.nfg");
 				auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
 				auto texture = ResourceManagers::GetInstance()->GetTexture("EndGame.tga");
 				m_endgame = std::make_shared<Sprite2D>(model, shader, texture);
@@ -247,7 +246,7 @@ void GSPlay::Update(float deltaTime)
 				m_gameover->Set2DPosition(210, 140);
 				m_endgamecurrentscore = std::make_shared< Text>(shader, font, "Your Score:  " + std::to_string(scoregame), TextColor::RED, 1.2f);
 				m_endgamecurrentscore->Set2DPosition(210, 200);
-			}
+			
 		}
 		
 	}
@@ -438,12 +437,9 @@ void GSPlay::Draw()
 	m_barrel->Draw();
 	m_block->Draw();
 	m_coins->Draw();
+	m_carbg->Draw();
 	
-	/*if (endgame) {
-		
-		m_boom->Draw();
-	}*/
-	if (m_time>=1.5) {
+	if (endgame) {
 		m_endgame->Draw();
 		m_endgamecurrentscore->Draw();
 		m_gameover->Draw();

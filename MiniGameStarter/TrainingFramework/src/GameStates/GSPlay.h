@@ -42,6 +42,7 @@ public:
 private:
 	std::shared_ptr<ObjectObstacle>				m_barrel;
 	std::shared_ptr<ObjectObstacle>				m_block;
+	std::shared_ptr<ObjectObstacle>				m_carbg;
 	std::shared_ptr<ParallelBG>	m_background;
 	std::shared_ptr<Sprite2D>	m_objectplayer;
 	std::shared_ptr<Text>		m_score;

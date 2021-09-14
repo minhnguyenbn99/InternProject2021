@@ -1,15 +1,15 @@
 ﻿  GSPlay.cpp
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(73,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(222,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(256,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(262,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(269,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(275,38): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(280,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(330,31): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(342,32): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(351,32): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(361,32): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(79,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(228,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(262,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(268,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(275,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(281,38): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(286,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(336,31): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(348,32): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(357,32): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(367,32): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xutility(138,73): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
           with
           [
@@ -30,5 +30,5 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
           [
               _Ty=Text
           ]
-C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(93): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[9],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[9],TextColor &&,double &&)' being compiled
+C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(99): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[9],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[9],TextColor &&,double &&)' being compiled
   TrainingFramework.vcxproj -> C:\Users\Minh Nguyen Macbook\Desktop\InternProject2021\MiniGameStarter\BIN-Nvidia\TrainingFramework.exe
